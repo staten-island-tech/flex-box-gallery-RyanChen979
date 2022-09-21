@@ -4,3 +4,19 @@ body,
   margin: 0px;
   padding: 0px;
 }
+
+#title {
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+
+.parent {
+  display: flex;
+  justify-content: space-around;
+}
+
+.child {
+  border: 2px red solid;
+  border-radius: 20px;
+}
