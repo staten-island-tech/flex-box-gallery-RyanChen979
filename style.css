@@ -1,24 +1,22 @@
 html,
-body,
-* {
+body {
   margin: 0px;
   padding: 0px;
-  background-color: aquamarine;
+  background-color: darksalmon;
 }
 
 #title {
   text-align: center;
   margin-top: 70px;
   margin-bottom: 50px;
+  color: green;
 }
 
 .parent {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   box-sizing: border-box;
-  background-color: blue;
-  width: 40vw;
-  width: 70%;
+  width: 90vw;
   text-align: center;
   margin: auto;
 }
@@ -26,5 +24,10 @@ body,
 .child {
   border: 2px red solid;
   border-radius: 20px;
-  background-color: white;
+  background-color: lightblue;
+  padding: 50px;
+}
+
+#images {
+  width: 350px;
 }
