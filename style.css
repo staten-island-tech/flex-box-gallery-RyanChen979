@@ -3,6 +3,7 @@ body,
 * {
   margin: 0px;
   padding: 0px;
+  background-color: aquamarine;
 }
 
 #title {
@@ -14,9 +15,16 @@ body,
 .parent {
   display: flex;
   justify-content: space-around;
+  box-sizing: border-box;
+  background-color: blue;
+  width: 40vw;
+  width: 70%;
+  text-align: center;
+  margin: auto;
 }
 
 .child {
   border: 2px red solid;
   border-radius: 20px;
+  background-color: white;
 }
