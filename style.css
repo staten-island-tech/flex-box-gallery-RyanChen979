@@ -9,25 +9,64 @@ body {
   text-align: center;
   margin-top: 70px;
   margin-bottom: 50px;
-  color: green;
+  color: blue;
+  -webkit-tap-highlight-color: white;
 }
 
 .parent {
   display: flex;
   justify-content: space-evenly;
   box-sizing: border-box;
-  width: 90vw;
   text-align: center;
   margin: auto;
+  align-items: center;
+}
+
+#header {
+  font-size: 25px;
 }
 
 .child {
   border: 2px red solid;
   border-radius: 20px;
-  background-color: lightblue;
+  width: 20%;
+  background-color: purple;
   padding: 50px;
+  box-shadow: 5px 3px 3px grey;
+  height: 700px;
+}
+
+.child-1 {
+}
+
+.child-2 {
+}
+
+.child-3 {
+}
+
+.child-4 {
+}
+
+.child-5 {
+}
+
+.child-6 {
+}
+
+.child-7 {
+}
+
+.child-8 {
+}
+
+.child-9 {
 }
 
 #images {
   width: 350px;
+}
+
+#items {
+  text-align: left;
 }
