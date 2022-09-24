@@ -30,11 +30,11 @@ body {
 .child {
   border: 2px red solid;
   border-radius: 20px;
-  width: 20%;
+  width: 22%;
   background-color: purple;
   padding: 50px;
   box-shadow: 5px 3px 3px grey;
-  height: 500px;
+  height: 450px;
 }
 
 .child-1 {
@@ -65,7 +65,8 @@ body {
 }
 
 #img {
-  width: 350px;
+  width: 360px;
+  align-items: center;
 }
 
 #items {
