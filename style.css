@@ -27,23 +27,25 @@ body,
 
 #header {
   font-size: 30px;
+  margin-top: 5px;
   background-color: purple;
   font-family: "Josefin Sans", sans-serif;
 }
 
-.child {
+#child {
   border: 3px white solid;
   border-radius: 20px;
   width: 22%;
-  background-color: purple;
   padding: 50px;
   box-shadow: 5px 3px 3px grey;
   height: 350px;
+  background-color: purple;
   color: white;
 }
 
 .description {
   font-size: 25px;
+  margin-top: 35px;
   background-color: purple;
   font-family: "Dancing Script", cursive;
 }
