@@ -1,5 +1,6 @@
 html,
-body {
+body,
+* {
   margin: 0px;
   padding: 0px;
   background-color: darksalmon;
@@ -11,7 +12,6 @@ body {
   margin-top: 70px;
   margin-bottom: 50px;
   color: white;
-  font-family: "Dancing Script", cursive;
   font-family: "Josefin Sans", sans-serif;
   text-decoration: underline;
 }
@@ -27,7 +27,8 @@ body {
 
 #header {
   font-size: 30px;
-  text-decoration: underline;
+  background-color: purple;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .child {
@@ -37,18 +38,21 @@ body {
   background-color: purple;
   padding: 50px;
   box-shadow: 5px 3px 3px grey;
-  height: 450px;
+  height: 350px;
   color: white;
-  font-family: "Dancing Script", cursive;
 }
 
 .description {
   font-size: 25px;
+  background-color: purple;
+  font-family: "Dancing Script", cursive;
 }
 
 #img {
   width: 360px;
   align-items: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 #items {
