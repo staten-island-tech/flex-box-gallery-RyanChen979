@@ -19,26 +19,30 @@ body,
 .parent {
   display: flex;
   justify-content: space-evenly;
+  flex-direction: row;
   box-sizing: border-box;
   text-align: center;
   margin: auto;
   align-items: center;
+  flex-wrap: wrap;
+  font-size: 10px;
 }
 
 #header {
   font-size: 30px;
   margin-top: 5px;
+  padding: 0;
   background-color: purple;
   font-family: "Josefin Sans", sans-serif;
 }
 
 #child {
-  border: 3px white solid;
-  border-radius: 20px;
+  border: 0.5rem white solid;
+  border-radius: 2rem;
   width: 22%;
-  padding: 50px;
+  padding: 35px;
   box-shadow: 5px 3px 3px grey;
-  height: 350px;
+  height: 20rem;
   background-color: purple;
   color: white;
 }
@@ -47,17 +51,13 @@ body,
   font-size: 25px;
   margin-top: 35px;
   background-color: purple;
-  font-family: "Dancing Script", cursive;
+  font-family: "Dancing Script";
 }
 
 #img {
-  width: 360px;
-  align-items: center;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  width: auto;
+  height: 10rem;
   box-sizing: border-box;
-}
-
-#items {
-  text-align: left;
+  margin-top: 1rem;
+  align-items: initial;
 }
