@@ -4,6 +4,8 @@ body,
   margin: 0px;
   padding: 0px;
   text-align: center;
+  box-sizing: border-box;
+  justify-content: space-evenly;
 }
 html {
   background-size: auto;
@@ -20,9 +22,7 @@ html {
 
 .parent {
   display: flex;
-  justify-content: space-evenly;
   flex-direction: row;
-  box-sizing: border-box;
   text-align: center;
   margin: auto;
   margin-bottom: 20px;
@@ -44,7 +44,8 @@ html {
   width: 22%;
   padding: 35px;
   box-shadow: 0px 0px 25px blue, 0px 0px 75px red;
-  height: 20rem;
+  height: auto;
+  width: auto;
   color: white;
 }
 
@@ -57,7 +58,6 @@ html {
 #img {
   width: 20rem;
   height: auto;
-  box-sizing: border-box;
   margin-top: 1rem;
   align-items: initial;
 }
