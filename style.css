@@ -16,8 +16,17 @@ html {
   font-size: 40px;
   margin-top: 70px;
   margin-bottom: 50px;
+  padding: 0.2rem 0rem 0.2rem 0rem;
   color: white;
   font-family: "Josefin Sans", sans-serif;
+
+  transition: 0.4s;
+}
+
+#title:hover {
+  background-color: azure;
+  color: blueviolet;
+  border: 2px ridge purple;
 }
 
 .parent {
