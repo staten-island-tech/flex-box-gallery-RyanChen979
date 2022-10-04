@@ -38,15 +38,24 @@ html {
   font-family: "Josefin Sans", sans-serif;
 }
 
-.child {
-  border: 0.5rem white solid;
+#child {
+  border: 0.3rem white solid;
   border-radius: 2rem;
-  width: 22%;
   padding: 35px;
-  box-shadow: 0px 0px 25px blue, 0px 0px 75px red;
+  box-shadow: 0px 0px 25px rgb(70, 70, 175), 0px 0px 75px rgb(216, 84, 84);
   height: auto;
   width: auto;
+  color: black;
+
+  transition-duration: 0.57s;
+}
+
+#child:hover {
+  background-color: rgb(106, 26, 172);
+  padding: 3.8rem;
+  border: 0.1rem rgb(80, 219, 0) dashed;
   color: white;
+  font-size: 40px;
 }
 
 #description {
