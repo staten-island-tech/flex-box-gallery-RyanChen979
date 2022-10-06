@@ -20,7 +20,11 @@ html {
   color: white;
   font-family: "Josefin Sans", sans-serif;
 
-  transition: 0.4s;
+  transition: 0.45s;
+}
+
+#title:hover {
+  transform: inherit;
 }
 
 .parent {
@@ -45,6 +49,7 @@ html {
   border: 0.3rem black solid;
   border-radius: 2rem;
   padding: 35px;
+  margin-top: 20px;
   box-shadow: 0px 0px 25px rgb(70, 70, 175), 0px 0px 75px rgb(216, 84, 84);
   height: auto;
   width: auto;
@@ -55,10 +60,9 @@ html {
 
 #child:hover {
   background-color: rgb(106, 26, 172);
-  padding: 3.8rem;
-  border: 0.1rem rgb(80, 219, 0) dashed;
-  color: white;
-  font-size: 40px;
+  transform: scale(1.2);
+  border: 0.2rem rgb(80, 219, 0) dashed;
+  color: cyan;
 }
 
 #description {
