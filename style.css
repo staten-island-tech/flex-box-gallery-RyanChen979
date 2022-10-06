@@ -23,12 +23,6 @@ html {
   transition: 0.4s;
 }
 
-#title:hover {
-  background-color: azure;
-  color: blueviolet;
-  border: 2px ridge purple;
-}
-
 .parent {
   display: flex;
   flex-direction: row;
@@ -48,7 +42,7 @@ html {
 }
 
 #child {
-  border: 0.3rem white solid;
+  border: 0.3rem black solid;
   border-radius: 2rem;
   padding: 35px;
   box-shadow: 0px 0px 25px rgb(70, 70, 175), 0px 0px 75px rgb(216, 84, 84);
