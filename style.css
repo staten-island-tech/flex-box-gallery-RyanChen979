@@ -24,7 +24,18 @@ html {
 }
 
 #title:hover {
-  transform: inherit;
+  animation-name: rotate;
+  animation-duration: 1.53s;
+  animation-direction: normal;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .parent {
@@ -55,14 +66,27 @@ html {
   width: auto;
   color: black;
 
-  transition-duration: 0.57s;
+  transition-duration: 0.73s;
 }
 
 #child:hover {
   background-color: rgb(106, 26, 172);
-  transform: scale(1.2);
+  padding: 3.48rem;
   border: 0.2rem rgb(80, 219, 0) dashed;
   color: cyan;
+
+  animation-name: rotate;
+  animation-duration: 1.53s;
+  animation-direction: normal;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 #description {
@@ -76,4 +100,22 @@ html {
   height: auto;
   margin-top: 1rem;
   align-items: initial;
+}
+
+.buttons {
+  border-radius: 2rem;
+  padding: 0.2rem;
+}
+
+.buttons-1 {
+  color: #fff;
+  background-color: rgb(255, 0, 0);
+}
+
+.buttons-2 {
+  color: #fff;
+  background-color: rgb(233, 14, 204);
+}
+
+.buttons-3 {
 }
