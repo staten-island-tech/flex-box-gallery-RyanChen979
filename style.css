@@ -38,15 +38,29 @@ html {
   }
 }
 
+.social-media {
+  display: flex;
+  flex-direction: row;
+}
+
 .parent {
   display: flex;
   flex-direction: row;
-  text-align: center;
+
   margin: auto;
   margin-bottom: 20px;
   align-items: center;
   flex-wrap: wrap;
   font-size: 10px;
+}
+
+@media screen and (max-width) {
+  .parent {
+    flex-direction: column;
+    width: 100%;
+  }
+  .child {
+  }
 }
 
 #header {
@@ -76,7 +90,7 @@ html {
   color: cyan;
 
   animation-name: rotate;
-  animation-duration: 1.53s;
+  animation-duration: 2.46s;
   animation-direction: normal;
 }
 
