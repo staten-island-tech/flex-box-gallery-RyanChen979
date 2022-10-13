@@ -17,30 +17,33 @@ html {
   margin-top: 70px;
   margin-bottom: 50px;
   padding: 0.2rem 0rem 0.2rem 0rem;
-  color: white;
+  color: blue;
   font-family: "Josefin Sans", sans-serif;
-
-  transition: 0.45s;
-}
-
-#title:hover {
-  animation-name: rotate;
-  animation-duration: 1.53s;
-  animation-direction: normal;
-}
-
-@keyframes rotate {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
 }
 
 .social-media {
   display: flex;
   flex-direction: row;
+}
+
+.buttons {
+  border-radius: 2rem;
+  padding: 0.2rem;
+}
+
+.buttons-1 {
+  color: #fff;
+  background-color: rgb(255, 0, 0);
+}
+
+.buttons-2 {
+  color: #fff;
+  background-color: rgb(233, 14, 204);
+}
+
+.buttons-3 {
+  color: #fff;
+  background-color: dodgerblue;
 }
 
 .parent {
@@ -56,10 +59,11 @@ html {
 
 @media screen and (max-width) {
   .parent {
-    flex-direction: column;
-    width: 100%;
+    margin-bottom: 0px;
   }
   .child {
+    flex-direction: column;
+    width: 100%;
   }
 }
 
@@ -71,14 +75,14 @@ html {
 }
 
 #child {
-  border: 0.3rem black solid;
+  border: 0.3rem white solid;
   border-radius: 2rem;
   padding: 35px;
   margin-top: 20px;
-  box-shadow: 0px 0px 25px rgb(70, 70, 175), 0px 0px 75px rgb(216, 84, 84);
+  box-shadow: 0px 0px 25px rgb(83, 83, 230), 0px 0px 75px rgb(216, 84, 84);
   height: auto;
   width: auto;
-  color: black;
+  color: white;
 
   transition-duration: 0.73s;
 }
@@ -86,11 +90,13 @@ html {
 #child:hover {
   background-color: rgb(106, 26, 172);
   padding: 3.48rem;
-  border: 0.2rem rgb(80, 219, 0) dashed;
+  border: 0.2rem dashed red;
+
   color: cyan;
+  box-shadow: 0px 0px 150px white;
 
   animation-name: rotate;
-  animation-duration: 2.46s;
+  animation-duration: 1.37s;
   animation-direction: normal;
 }
 
@@ -114,22 +120,4 @@ html {
   height: auto;
   margin-top: 1rem;
   align-items: initial;
-}
-
-.buttons {
-  border-radius: 2rem;
-  padding: 0.2rem;
-}
-
-.buttons-1 {
-  color: #fff;
-  background-color: rgb(255, 0, 0);
-}
-
-.buttons-2 {
-  color: #fff;
-  background-color: rgb(233, 14, 204);
-}
-
-.buttons-3 {
 }
