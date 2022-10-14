@@ -20,30 +20,21 @@ html {
   color: blue;
   font-family: "Josefin Sans", sans-serif;
 }
-
-.social-media {
-  display: flex;
-  flex-direction: row;
+.dot {
+  background-color: white;
+  border-radius: 50%;
+  height: 6px;
+  aspect-ratio: 1 / 1;
+  animation: 2s linear 0s infinite alternate abc;
 }
 
-.buttons {
-  border-radius: 2rem;
-  padding: 0.2rem;
-}
-
-.buttons-1 {
-  color: #fff;
-  background-color: rgb(255, 0, 0);
-}
-
-.buttons-2 {
-  color: #fff;
-  background-color: rgb(233, 14, 204);
-}
-
-.buttons-3 {
-  color: #fff;
-  background-color: dodgerblue;
+@keyframes abc {
+  from {
+    transform: translateX(600px);
+  }
+  to {
+    transform: translateX(1000px);
+  }
 }
 
 .parent {
@@ -91,7 +82,6 @@ html {
   background-color: rgb(106, 26, 172);
   padding: 3.48rem;
   border: 0.2rem dashed red;
-
   color: cyan;
   box-shadow: 0px 0px 150px white;
 
@@ -113,6 +103,7 @@ html {
   font-size: 25px;
   margin-top: 35px;
   font-family: "Dancing Script";
+  color: white;
 }
 
 #img {
