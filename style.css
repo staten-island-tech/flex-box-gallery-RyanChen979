@@ -15,7 +15,8 @@ html {
 #title {
   font-size: 40px;
   margin-top: 70px;
-  margin-bottom: 50px;
+  margin-left: 400px;
+  margin-right: 400px;
   padding: 0.2rem 0rem 0.2rem 0rem;
   color: blue;
   font-family: "Josefin Sans", sans-serif;
@@ -25,15 +26,15 @@ html {
   border-radius: 50%;
   height: 6px;
   aspect-ratio: 1 / 1;
-  animation: 2s linear 0s infinite alternate abc;
+  animation: 1s linear 0s infinite alternate abc;
 }
 
 @keyframes abc {
   from {
-    transform: translateX(600px);
+    transform: translateX(800px);
   }
   to {
-    transform: translateX(1000px);
+    transform: translateX(1100px);
   }
 }
 
@@ -48,13 +49,42 @@ html {
   font-size: 10px;
 }
 
-@media screen and (max-width) {
+@media screen and (max-width: 1200px) {
   .parent {
-    margin-bottom: 0px;
+  }
+  .child {
+    flex-direction: column;
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .parent {
+  }
+  .child {
+    flex-direction: column;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .parent {
   }
   .child {
     flex-direction: column;
     width: 100%;
+  }
+  .dot {
+    animation: 1s linear 0s infinite alternate abc;
+  }
+  @keyframes abc {
+    from {
+      transform: translateX(200px);
+    }
+
+    to {
+      transform: translateX(400px);
+    }
   }
 }
 
@@ -79,7 +109,7 @@ html {
 }
 
 #child:hover {
-  background-color: rgb(106, 26, 172);
+  background-color: rgb(0, 0, 216);
   padding: 3.48rem;
   border: 0.2rem dashed red;
   color: cyan;
