@@ -8,19 +8,23 @@ body,
   justify-content: space-evenly;
 }
 html {
-  background-size: auto;
-  background-image: url(https://coolbackgrounds.io/images/backgrounds/index/disco-dba865f1.png);
+  background: linear-gradient(
+      217deg,
+      rgba(255, 0, 0, 0.8),
+      rgba(255, 0, 0, 0) 70.71%
+    ),
+    linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
 }
 
 #title {
-  font-size: 40px;
-  margin-top: 70px;
-  margin-left: 400px;
-  margin-right: 400px;
-  padding: 0.2rem 0rem 0.2rem 0rem;
+  font-size: 3rem;
+  margin: 4.375rem 50px 0px 50px;
+  padding: 0.5rem 0rem 0rem 0rem;
   color: blue;
   font-family: "Josefin Sans", sans-serif;
 }
+
 .dot {
   background-color: white;
   border-radius: 50%;
@@ -31,10 +35,10 @@ html {
 
 @keyframes abc {
   from {
-    transform: translateX(800px);
+    transform: translateX(50rem);
   }
   to {
-    transform: translateX(1100px);
+    transform: translateX(69rem);
   }
 }
 
@@ -47,45 +51,6 @@ html {
   align-items: center;
   flex-wrap: wrap;
   font-size: 10px;
-}
-
-@media screen and (max-width: 1200px) {
-  .parent {
-  }
-  .child {
-    flex-direction: column;
-    width: 60%;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .parent {
-  }
-  .child {
-    flex-direction: column;
-    width: 80%;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .parent {
-  }
-  .child {
-    flex-direction: column;
-    width: 100%;
-  }
-  .dot {
-    animation: 1s linear 0s infinite alternate abc;
-  }
-  @keyframes abc {
-    from {
-      transform: translateX(200px);
-    }
-
-    to {
-      transform: translateX(400px);
-    }
-  }
 }
 
 #header {
@@ -109,24 +74,13 @@ html {
 }
 
 #child:hover {
-  background-color: rgb(0, 0, 216);
+  background: linear-gradient(#e66465, #9198e5);
   padding: 3.48rem;
-  border: 0.2rem dashed red;
+  border: 0.2rem dashed black;
+
   color: cyan;
   box-shadow: 0px 0px 150px white;
-
-  animation-name: rotate;
-  animation-duration: 1.37s;
-  animation-direction: normal;
-}
-
-@keyframes rotate {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+  transform: scale(1.05);
 }
 
 #description {
@@ -141,4 +95,41 @@ html {
   height: auto;
   margin-top: 1rem;
   align-items: initial;
+}
+
+@media screen and (max-width: 1200px) {
+  .child {
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .child {
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .child {
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+  }
+  @keyframe abc {
+    from {
+    }
+  }
+}
+
+@media abc and (max-width: 600px) {
+  from {
+    transform: translateX(200px);
+  }
+  to {
+    transform: translateX(500px);
+  }
 }
