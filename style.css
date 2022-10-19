@@ -74,13 +74,29 @@ html {
 }
 
 #child:hover {
-  background: linear-gradient(#e66465, #9198e5);
   padding: 3.48rem;
   border: 0.2rem dashed black;
-
   color: cyan;
   box-shadow: 0px 0px 150px white;
   transform: scale(1.05);
+}
+
+.rectangle-in {
+  display: inline-block;
+  transform: perspective(1px) translateZ(0);
+  position: relative;
+  background: linear-gradient(#e66465, #9198e5);
+}
+
+.rectangle-in:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
 }
 
 #description {
@@ -103,6 +119,15 @@ html {
     flex-direction: column;
     width: 60%;
   }
+
+  @keyframes abc {
+    from {
+      transform: translateX(16rem);
+    }
+    to {
+      transform: translateX(36.5rem);
+    }
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -110,6 +135,15 @@ html {
     flex-wrap: wrap;
     flex-direction: column;
     width: 80%;
+  }
+
+  @keyframes abc {
+    from {
+      transform: translateX(16rem);
+    }
+    to {
+      transform: translateX(36.5rem);
+    }
   }
 }
 
@@ -119,17 +153,13 @@ html {
     flex-direction: column;
     width: 100%;
   }
-  @keyframe abc {
-    from {
-    }
-  }
-}
 
-@media abc and (max-width: 600px) {
-  from {
-    transform: translateX(200px);
-  }
-  to {
-    transform: translateX(500px);
+  @keyframes abc {
+    from {
+      transform: translateX(5.5rem);
+    }
+    to {
+      transform: translateX(24.5rem);
+    }
   }
 }
